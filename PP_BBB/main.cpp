@@ -1,10 +1,12 @@
 #include <QCoreApplication>
 #include <QSqlDatabase>
+#include <QSqlQuery>
 #include <iostream>
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
+
 
 
     QSqlDatabase dataBase;
