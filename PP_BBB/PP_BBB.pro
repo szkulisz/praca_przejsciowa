@@ -1,4 +1,4 @@
-QT += core sql
+QT += core sql serialport
 QT -= gui
 
 TARGET = PP_BBB
@@ -11,5 +11,10 @@ CONFIG += c++11
 
 TEMPLATE = app
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+
+
+QTPLUGIN += qsqlmysql
+
+HEADERS += \
 
