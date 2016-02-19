@@ -12,9 +12,14 @@ CONFIG += c++11
 TEMPLATE = app
 
 SOURCES += main.cpp \
+    program.cpp
 
 
 QTPLUGIN += qsqlmysql
 
 HEADERS += \
+    program.h
 
+QMAKE_CXXFLAGS += -pthread
+QMAKE_CFLAGS += -pthread
+LIBS += -pthread
